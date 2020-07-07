@@ -1,0 +1,261 @@
+
+.text-black {color: #000;}
+.text-dark {color: #333;}
+.text-deep {color: #555;} 
+.text-weak {color: #B3B3B3;}
+.text-white {color: #fff;}
+// 宽度
+.w-full {
+  width: 100%;
+}
+@for $i from 0 through 1080
+{
+  .w#{$i}
+  {
+    width:(1px * $i);
+  }
+}
+@for $i from 0 through 1080
+{
+  .min-w#{$i}
+  {
+    min-width:(1px * $i);
+  }
+}
+@for $i from 0 through 1080
+{
+  .max-w#{$i}
+  {
+    max-width:(1px * $i);
+  }
+}
+
+// 高度
+.h-full {
+  height: 100%;
+}
+@for $i from 0 through 810
+{
+  .h#{$i}
+  {
+    height:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .min-h#{$i}
+  {
+    min-height:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .max-h#{$i}
+  {
+    max-height:(1px * $i);
+  }
+}
+
+// 字体
+@for $i from 0 through 100
+{
+  .f#{$i}
+  {
+    font-size:(1px * $i);
+  }
+}
+
+// 文字对齐
+.tl {text-align: left;}
+.tc {text-align: center;}
+.tr {text-align: right;}
+
+// 浮动与清除浮动
+.fl {float: left;}
+.fr {float: right;}
+.fix {*zoom: 1;}
+.fix:after{display:table; content:''; clear:both;}
+
+// 显示
+.dn{display:none;}
+.di{display:inline;}
+.db{display:block;}
+.dib{display:inline-block;}
+.dt{display:table;}
+.vm {vertical-align: middle;}
+.vib {display:inline-block; vertical-align: middle;}
+.fwb { font-weight: bold; }
+.fwbr { font-weight: bolder; }
+.vatt{vertical-align: text-top;}
+
+// 定位
+.pr {position: relative;}
+.pa {position: absolute;}
+.pf {position: fixed;}
+
+// 盒子模型
+// padding
+@for $i from 0 through 810
+{
+  .p#{$i}
+  {
+    padding:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .pt#{$i}
+  {
+    padding-top:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .pb#{$i}
+  {
+    padding-bottom:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .pl#{$i}
+  {
+    padding-left:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .pr#{$i}
+  {
+    padding-right:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .px#{$i}
+  {
+    padding:0 (1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .py#{$i}
+  {
+    padding:(1px * $i) 0;
+  }
+}
+// margin
+@for $i from 0 through 810
+{
+  .m#{$i}
+  {
+    margin:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .mt#{$i}
+  {
+    margin-top:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .mb#{$i}
+  {
+    margin-bottom:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .ml#{$i}
+  {
+    margin-left:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .mr#{$i}
+  {
+    margin-right:(1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .mx#{$i}
+  {
+    margin:0 (1px * $i);
+  }
+}
+@for $i from 0 through 810
+{
+  .my#{$i}
+  {
+    margin:(1px * $i) 0;
+  }
+}
+// absolute fixed
+@for $i from 0 through 1080
+{
+  .l#{$i}
+  {
+    left:1px * $i;
+  }
+}
+@for $i from 0 through 1080
+{
+  .r#{$i}
+  {
+    right:1px * $i;
+  }
+}
+@for $i from 0 through 810
+{
+  .t#{$i}
+  {
+    top:1px * $i;
+  }
+}
+@for $i from 0 through 810
+{
+  .b#{$i}
+  {
+    bottom:1px * $i;
+  }
+}
+// line-height
+@for $i from 0 through 810
+{
+  .lh#{$i}
+  {
+    line-height:1px * $i;
+  }
+}
+// z-index
+@for $i from 0 through 810
+{
+  .zi#{$i}
+  {
+    z-index:1 * $i;
+  }
+}
+// 超出隐藏
+.ovh {
+  overflow: hidden;
+}
+// 超出省略
+.omit1 {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.cover{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4b4b4c;
+  opacity: .7;
+  z-index: 30;
+}
