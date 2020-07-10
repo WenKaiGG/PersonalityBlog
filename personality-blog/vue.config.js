@@ -1,6 +1,16 @@
 module.exports = {
-  devServer: {
-    // 手机浏览器需要开启https才可以使用WebRTC
-    https: true
-  }
-}
+  // 配置 css module
+  // rules: [
+  //   {
+  //     test: '\.vue$',
+  //     loader: 'vue-loader',
+  //     options: {
+  //       cssModules: {
+  //         localIdentName: '[path][name]---[local]---[hash:base64:5]',
+  //         camelCase: true
+  //       }
+  //     }
+  //   }
+  // ]
+  };
+  

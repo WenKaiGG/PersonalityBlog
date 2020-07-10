@@ -1,28 +1,28 @@
-import { createRouter, createWebHistory } from 'vue-router';
-
-interface RoutesType {
-  path: string;
-  name: string;
-  component: () => {};
-  meta?: {
-    index?: number;
-    keepAlive?: boolean;
-  };
-  children?: RoutesType[];
-}
-
-const routes: RoutesType[] = [
+import Vue from 'vue'
+import VueRouter, { RouteConfig } from 'vue-router'
+import Home from '@/view/Home/Home'
+Vue.use(VueRouter)
+  const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/home/Home.vue'),
-  
+    name: 'home ',
+    component: Home
+  },
+  {
+    path: '/Writing',
+    name: 'Archives',
+    component: () => import('@/view/Writing/Writing')
+  },
+  {
+    path: '/About',
+    name: 'About',
+    component: () => import('@/view/About/About')
   }
 ]
 
-const router = createRouter({
-  // createWebHistory 第一个参数为以前路由的base
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
