@@ -1,0 +1,78 @@
+.homeBox {
+    max-width: 700px;
+    padding: 0 32px;
+    color: #c9cacc;
+    margin: 0 auto;
+    text-align: left;
+    .textarea{
+        min-height: 150px;
+        line-height: 2;
+        position: relative;
+        margin-bottom: 40px;
+        .link{
+            position: absolute;
+            bottom: -20px;
+            margin-top: 20px ;
+        }
+    }
+    // ArchivesBox
+    .ArchivesBox {
+        max-width: 700px;
+        text-align: left;
+        h1{
+     
+            margin-bottom: 16px;
+          a{
+            color:#6996e0;
+            text-decoration: none;
+          }
+        }
+        .ArchivesList{
+            li{
+                margin-bottom: 5px;
+                span{
+                    display:inline-block;
+                    min-width: 100px;
+                    margin-right: 16px;
+                    line-height: 2;
+                    color:#666;
+                    font-size: 14px;
+                }
+                a{
+                    line-height: 2;
+                    &:hover{
+                        color: #dd1a22;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .navlink {
+        display: none;
+    }
+    .title {
+        min-width: 100px;
+        vertical-align: top;
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+    .list {
+        float: right;
+        display: block !important;
+        margin-top: 4px;
+    }
+    .ArchivesBox {
+        max-width: 700px;
+        .ArchivesList{
+            li{
+                margin-bottom: 5px;
+                span{
+              display: block !important;
+                
+            }}
+        }
+    }
+}

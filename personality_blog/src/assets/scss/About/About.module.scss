@@ -1,0 +1,60 @@
+.AboutBox {
+
+    .typeArea {
+        margin: 0 auto;
+        padding: 0 32px;
+        max-width: 700px;
+        // 介绍
+        .introduce {
+            padding: 0 20px;
+            color: #c9cacc;
+            line-height: 2;
+        }
+        // 图片 
+        .bgimgBox{
+            width: 100%;
+            margin: 20px 0;
+            text-align: left;
+            .img{
+                width: 100%;
+                min-height: 370px;
+                background:url("../../../assets/img/cat.jpg") no-repeat center; 
+                background-size: contain;
+            }
+        }
+        // 个人信息
+        .userInfor{
+           h1{
+            letter-spacing: .01em;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            color: #dd1a22;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+           }
+           ul{
+         color: #c9cacc;
+         display: block;
+         list-style-type: disc;
+         margin-block-start: 1em;
+         margin-block-end: 1em;
+         margin-inline-start: 0px;
+         margin-inline-end: 0px;
+         padding-inline-start: 40px;
+         li{
+             line-height: 2;
+         }
+           }
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .bgimgBox{
+        .img{
+            min-height: 200px !important;
+          
+        }
+    }
+}

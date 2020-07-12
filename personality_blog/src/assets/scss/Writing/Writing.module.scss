@@ -1,0 +1,42 @@
+.Writingbox{
+    width: 100%;
+    .WritingMiddle{
+        height: 100%;
+        max-width: 700px;
+        padding: 0 32px;
+        color: #c9cacc;
+        margin: 0 auto;
+        text-align: left;
+        .List{
+            margin-top: 20px;
+            h3{
+                display: block;
+                height: 27px;
+                line-height: 27px;
+                margin-bottom: 10px;
+            }
+            .ListTime{
+                line-height: 2;
+                span{
+                    color: #666;
+                    font-size: 14px;
+                }
+                a{
+                    margin-left: 16px;
+                    text-decoration: underline;
+                    &:hover{
+                        color: #dd1a22;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    
+    .ListTime{
+        span{
+            display: block !important;
+        }
+    }
+}
