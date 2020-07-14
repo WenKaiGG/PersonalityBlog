@@ -3,8 +3,11 @@ import Homescss from '@/assets/scss/home/home.module.scss'
 @Component
 export default class Homes extends Vue {
     typer = require('typer-js');
+    qwq = require('../../graphql/Apo')
     @Ref() readonly textarea: any;
     mounted() {
+        console.log(this.qwq.getHomeData())
+        console.log(this.qwq.hello)
         const typerDom = this.$refs.textarea;
         // this.typer().line('Typer.js is awesome!')
         // this.typer(typerDom).line('How cool is this?').line('So very cool.') .line('Agreed!')
